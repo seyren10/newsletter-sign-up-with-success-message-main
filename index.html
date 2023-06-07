@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="sign-up-form">
+        <picture class="sign-up-form_image">
+          <source
+            srcset="assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width: 375px)"
+          />
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt="Designed by Katemangostar / Freepik"
+          />
+        </picture>
+
+        <!-- Sign-up form start -->
+        <form action="success.html" class="sign-up-form_form" novalidate id="form-validate">
+          <h1 class="sign-up-form_heading">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul role="list" class="sign-up-form_list">
+            <li><span><img src="assets/images/icon-list.svg" alt=""></span> <p>Product discovery and building what matters</p></li>
+            <li><span><img src="assets/images/icon-list.svg" alt=""></span> <p>Measuring to ensure updates are a success</p></li>
+            <li><span><img src="assets/images/icon-list.svg" alt=""></span> <p>And much more!</p></li>
+          </ul>
+
+          <div class="form-group">
+            <div class="flex">
+              <label for="email">Email address</label>
+              <p class="invalid-message hide" id="invalid-message">Valid email required</p>
+            </div>
+            <input type="email" id="email" placeholder="email@company.com" id="invalid-input"/>
+            <button>Subscribe to monthly newsletter</button>
+          </div>
+        </form>
+
+     
+      </section>
+    </main>
+  </body>
+</html>
